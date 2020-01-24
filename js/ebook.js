@@ -8,15 +8,15 @@ function registrar() {
         email: emailTxt
     })
 
-    // if(emailTxt == 0) {
-    //     res.innerHTML = `Preencha o campo do e-mail`
-    //     res.style.display = 'block'
-    //     res.classList.add('alert-danger')
-    // } else {
-    //     res.innerHTML = `Seu pedido foi enviado com sucesso!`
-    //     res.style.display = 'block'
-    //     res.classList.remove('alert-danger')
-    //     res.classList.add('alert-success')
-    // }
+    if(emailTxt == 0) {
+        res.innerHTML = `Preencha o campo do e-mail`
+        res.style.display = 'block'
+        res.classList.add('alert-danger')
+    } else {
+        res.innerHTML = `Seu pedido foi enviado com sucesso!`
+        res.style.display = 'block'
+        res.classList.remove('alert-danger')
+        res.classList.add('alert-success')
+    }
 
 }
